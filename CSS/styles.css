@@ -5,19 +5,28 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    width: 100vw;
+    background-image: radial-gradient(circle, #b5b040, #9ea13e, #88923c, #74833a, #627437);
+}
+
+.container {
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: column;
-    
-} 
+    justify-content: center;
+    align-items: center;
+}
 
 h1 {
-    margin: 6vh auto;
-    justify-content: center;
     color: steelblue;
     font-size: 3rem;
+    padding: 1vw;
+    margin: 2vw 0;
 }
 
 h1 + ul {
+    list-style: none;
     margin-top: 15vh;
 }
 
@@ -27,7 +36,8 @@ li {
 }
 
 li a{
-    color: #000;
+    text-align: center;
+    color: #fff;
     text-decoration: none;
     font-size: 1.4rem;
     text-transform: capitalize;
